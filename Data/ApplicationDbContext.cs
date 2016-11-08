@@ -15,6 +15,10 @@ namespace Methub.Data
         {
         }
 
+        public DbSet<Survey> Surveys { get; set; }
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<QuestionDetail> QuestionDetails { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
