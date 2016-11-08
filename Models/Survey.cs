@@ -18,5 +18,7 @@ namespace Methub.Models
         public DateTime date_created { get; set; }
         public DateTime date_modified { get; set; }
         public Guid rowguid { get; set; }
+
+        public List<Question> Questions { get; set; } = new List<Question>();
     }
 }
