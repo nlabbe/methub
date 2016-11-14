@@ -1,10 +1,38 @@
 {
   "name": "methub",
   "private": true,
+
   "dependencies": {
-    "bootstrap": "3.3.6",
+    "bootstrap": "^3.3.7",
     "jquery": "2.2.3",
     "jquery-validation": "1.15.0",
-    "jquery-validation-unobtrusive": "3.2.6"
-  }
+    "jquery-validation-unobtrusive": "3.2.6",
+    "datatables": "^1.10.12",
+    "datatables-plugins": "^1.10.12",
+    "Flot": "flot#^0.8.3",
+    "font-awesome": "^4.7.0",
+    "holderjs": "^2.9.4",
+    "metisMenu": "^2.5.2",
+    "morris.js": "morrisjs#^0.5.1",
+    "datatables-responsive": "^2.1.0",
+    "bootstrap-social": "^5.0.0",
+    "flot.tooltip": "^0.9.0"
+  },
+    "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "pages",
+    "index.html",
+    "/js"
+  ],
+  "main": [
+    "wwwroot/css/sb-admin-2.css",
+    "wwwroot/css/sb-admin-2.min.css",
+    "wwwroot/js/sb-admin-2.js",
+    "wwwroot/js/sb-admin-2.min.js"
+  ]
 }
