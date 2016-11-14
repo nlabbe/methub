@@ -83,6 +83,13 @@ namespace Methub
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "survey",
+            //        template: "{controller=Survey}/{action=Index}/{id?}");
+            //});
         }
     }
 }

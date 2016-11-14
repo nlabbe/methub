@@ -1,0 +1,64 @@
+@model Methub.Models.Survey
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>Survey</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="id" />
+        <div class="form-group">
+            <label asp-for="date_created" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="date_created" class="form-control" />
+                <span asp-validation-for="date_created" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="date_modified" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="date_modified" class="form-control" />
+                <span asp-validation-for="date_modified" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="description" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="description" class="form-control" />
+                <span asp-validation-for="description" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="rowguid" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="rowguid" class="form-control" />
+                <span asp-validation-for="rowguid" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="title" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="title" class="form-control" />
+                <span asp-validation-for="title" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
