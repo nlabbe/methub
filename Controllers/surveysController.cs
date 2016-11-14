@@ -57,6 +57,9 @@ namespace methub.Controllers
         {
             if (ModelState.IsValid)
             {
+                survey.date_created=DateTime.Now;
+                survey.date_modified=DateTime.Now;
+                survey.rowguid=Guid.NewGuid();
                 _context.Add(survey);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
@@ -96,6 +99,7 @@ namespace methub.Controllers
             {
                 try
                 {
+                    survey.date_modified=DateTime.Now;
                     _context.Update(survey);
                     await _context.SaveChangesAsync();
                 }
