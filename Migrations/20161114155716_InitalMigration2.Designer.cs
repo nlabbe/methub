@@ -8,8 +8,8 @@ using Methub.Data;
 namespace methub.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20161114145047_SurveyEntity")]
-    partial class SurveyEntity
+    [Migration("20161114155716_InitalMigration2")]
+    partial class InitalMigration2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -112,15 +112,17 @@ namespace methub.Migrations
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("date_created");
+                    b.Property<DateTime?>("date_created");
 
-                    b.Property<DateTime>("date_modified");
+                    b.Property<DateTime?>("date_modified");
 
-                    b.Property<string>("description");
+                    b.Property<string>("description")
+                        .IsRequired();
 
-                    b.Property<Guid>("rowguid");
+                    b.Property<Guid?>("rowguid");
 
-                    b.Property<string>("title");
+                    b.Property<string>("title")
+                        .IsRequired();
 
                     b.HasKey("id");
 

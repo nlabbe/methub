@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace methub.Migrations
 {
-    public partial class SurveyEntity : Migration
+    public partial class InitalMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
