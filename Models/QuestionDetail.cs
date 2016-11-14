@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
+namespace Methub.Models
+{
+    public class QuestionDetail
+    {
+        public QuestionDetail()
+        {
+        }
+
+        [Key]
+        public int id { get; set; }
+        public int question_id { get; set; }
+        public Guid rowguid { get; set; }
+    }
+}
