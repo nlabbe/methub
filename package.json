@@ -1,0 +1,27 @@
+{
+  "name": "methub",
+  "version": "1.0.0",
+  "description": "methub node package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlabbe/methub.git"
+  },
+  "author": "metbus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlabbe/methub/issues"
+  },
+  "homepage": "https://github.com/nlabbe/methub#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-header": "^1.8.8",
+    "gulp-uglify": "^2.0.0",
+    "rimraf": "^2.5.4"
+  }
+}

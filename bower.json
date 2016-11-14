@@ -30,9 +30,9 @@
     "/js"
   ],
   "main": [
-    "wwwroot/css/site.css",
-    "wwwroot/css/site.min.css",
-    "wwwroot/js/site.js",
-    "wwwroot/js/site.min.js"
+    "wwwroot/css/sb-admin-2.css",
+    "wwwroot/css/sb-admin-2.min.css",
+    "wwwroot/js/sb-admin-2.js",
+    "wwwroot/js/sb-admin-2.min.js"
   ]
 }
