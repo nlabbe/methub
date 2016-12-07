@@ -1,0 +1,91 @@
+@model Methub.Models.Constraint
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Constraint</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="comment" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="comment" class="form-control" />
+                <span asp-validation-for="comment" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="constraint_type" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="constraint_type" class="form-control" />
+                <span asp-validation-for="constraint_type" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="end_date" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="end_date" class="form-control" />
+                <span asp-validation-for="end_date" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="frequency" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="frequency" class="form-control" />
+                <span asp-validation-for="frequency" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="max_time" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="max_time" class="form-control" />
+                <span asp-validation-for="max_time" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="min_time" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="min_time" class="form-control" />
+                <span asp-validation-for="min_time" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="priority" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="priority" class="form-control" />
+                <span asp-validation-for="priority" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="rol" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="rol" class="form-control" />
+                <span asp-validation-for="rol" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="start_date" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="start_date" class="form-control" />
+                <span asp-validation-for="start_date" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
