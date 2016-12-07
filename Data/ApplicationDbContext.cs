@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,6 +18,7 @@ namespace Methub.Data
         public DbSet<Survey> Surveys { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<QuestionDetail> QuestionDetails { get; set; }
+        public DbSet<Constraint> Constraints { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -26,5 +27,7 @@ namespace Methub.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        
     }
 }
