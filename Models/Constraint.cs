@@ -21,5 +21,8 @@ namespace Methub.Models
         public Nullable<DateTime> min_time { get; set; }
         public Nullable<DateTime> max_time { get; set; }
         public string comment { get; set; }
+
+        
+        public List<ConstraintDetail> ConstraintDetails { get; set; }
     }
 }
